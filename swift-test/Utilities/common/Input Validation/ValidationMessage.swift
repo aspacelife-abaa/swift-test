@@ -1,6 +1,6 @@
 //
 //  ValidationMessage.swift
-//  Autocheck Partner
+//  swift-test
 //
 
 import Foundation

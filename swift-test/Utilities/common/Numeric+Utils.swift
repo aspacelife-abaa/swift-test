@@ -1,6 +1,6 @@
 //
 //  Numeric+Utils.swift
-//  Autocheck Partner
+//  swift-test
 //
 
 import Foundation

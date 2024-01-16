@@ -12,14 +12,6 @@ final class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-//        loginView.forgotPasswordTapHandler = { [weak self] in
-//            
-//        }
-//        
-//        loginView.signinTapHandler = { [weak self] email, password in
-////            self?.viewModel.signin(email: email, password: password)
-//        }
-//        
         signupView.signinTapHandler = showSignUpViewController
     }
     

@@ -1,8 +1,6 @@
 //
 //  ResponseConfig.swift
-//  Autocheck Partner
-//
-//  Created by Isaac Iniongun on 05/01/2022.
+//  swift-test
 //
 
 import Foundation
