@@ -34,7 +34,7 @@ final class SigninView: BaseScrollView {
     }()
     
     fileprivate lazy var forgotPasswordButton: CustomButton = {
-        CustomButton(title: Constants.FORGOT_PASSWORD+"?", font: .avenirRegular(size: 16), backgroundColor: .clear, textColor: .primaryBlue, tapAction: handleForgotPasswordButtonTapped)
+        CustomButton(title: Constants.FORGOT_PASSWORD, font: .avenirRegular(size: 16), backgroundColor: .clear, textColor: .primaryBlue, tapAction: handleForgotPasswordButtonTapped)
     }()
     
     fileprivate lazy var signInButton: CustomButton = {

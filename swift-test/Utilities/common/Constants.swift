@@ -14,7 +14,7 @@ struct Constants {
     static let NO = "No"
     static let NO_POSTS_FOUND = "No posts found"
     static let POSTS = "Posts"
-    static let FORGOT_PASSWORD = "Forgot Password"
+    static let FORGOT_PASSWORD = "Forgot Password?"
     static let SIGN_IN = "Sign In"
     static let SIGN_UP = "Sign Up"
     static let CHOOSE = "Choose"

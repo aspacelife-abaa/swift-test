@@ -6,7 +6,7 @@
 import UIKit
 //import DropDown
 
-public class ACPhoneNumberTextField: BaseView {
+public class CustomPhoneNumberTextField: BaseView {
     
     private lazy var floatingLabel = UILabel().apply {
         $0.text = Constants.PHONE_NUMBER
@@ -116,7 +116,7 @@ public class ACPhoneNumberTextField: BaseView {
     
 }
 
-extension ACPhoneNumberTextField: UITextFieldDelegate {
+extension CustomPhoneNumberTextField: UITextFieldDelegate {
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         textField.restrictToDigitsWithMaximumLength(range: range, string: string, maxLength: maxLength)

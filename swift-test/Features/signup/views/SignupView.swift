@@ -10,13 +10,12 @@ final class SignupView: BaseScrollView {
 //    private let viewModel = LoginViewViewModel()
     var signinTapHandler: NoParamHandler?
     
-    fileprivate let createAccountLabel = UILabel(text: Constants.CREATE_ACCOUNT, font: .avenirExtraBold(size: 25), color: .primaryTextColor, alignment: .left)
     fileprivate let firstNameTextField = CustomTextField(title: Constants.FIRST_NAME, validationType: .name)
     fileprivate let lastNameTextField = CustomTextField(title: Constants.LAST_NAME, validationType: .name)
     fileprivate let emailTextField = CustomTextField(title: Constants.EMAIL_ADDRESS, placeholder: "someone@email.com", validationType: .email)
-    fileprivate let phoneTextField = ACPhoneNumberTextField()
+    fileprivate let phoneTextField = CustomPhoneNumberTextField()
     fileprivate let passwordTextField = CustomTextField(title: Constants.PASSWORD, placeholder: passwordPlaceholder, isPassword: true, validationType: .password)
-    let stateTextField = ACDropdownTextField(floatingText: Constants.STATE)
+    let stateTextField = CustomDropdownTextField(floatingText: Constants.STATE)
     fileprivate let referralCodeTextField = CustomTextField(title: Constants.REFERRAL_CODE_OPTION, validationType: .alphaNumeric)
     private let consentCheckbox = Checkbox(isChecked: false)
     private let consentLabel = UILabel(text: Constants.SIGN_UP_CONSENT,
@@ -35,7 +34,6 @@ final class SignupView: BaseScrollView {
     
     fileprivate lazy var contentStackView = VerticalStackView(
         arrangedSubviews: [
-//            createAccountLabel,
             firstNameTextField,
             lastNameTextField,
             emailTextField,
@@ -63,7 +61,6 @@ final class SignupView: BaseScrollView {
         with(contentStackView) {
             _addSubview($0)
             _fillSuperview($0, padding: ._init(topBottom: 40, leftRight: 20))
-            $0.setCustomSpacing(30, after: createAccountLabel)
             $0.setCustomSpacing(40, after: consentStackView)
         }
         consentCheckbox.addTarget(self, action: #selector(didTapConsentCheckbox), for: .valueChanged)

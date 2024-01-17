@@ -37,8 +37,8 @@
 		4C547F252B56B50E00090A92 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C547F242B56B50E00090A92 /* UIView+Animations.swift */; };
 		4C547F2B2B56B8AE00090A92 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C547F2A2B56B8AE00090A92 /* SignupViewController.swift */; };
 		4C547F2D2B56C75F00090A92 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C547F2C2B56C75F00090A92 /* SignupView.swift */; };
-		4C547F2F2B56CBBA00090A92 /* ACPhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C547F2E2B56CBB900090A92 /* ACPhoneNumberTextField.swift */; };
-		4C547F312B56D2A200090A92 /* ACDropdownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C547F302B56D2A200090A92 /* ACDropdownTextField.swift */; };
+		4C547F2F2B56CBBA00090A92 /* CustomPhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C547F2E2B56CBB900090A92 /* CustomPhoneNumberTextField.swift */; };
+		4C547F312B56D2A200090A92 /* CustomDropdownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C547F302B56D2A200090A92 /* CustomDropdownTextField.swift */; };
 		4C547F332B56D8D300090A92 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C547F322B56D8D200090A92 /* BaseScrollView.swift */; };
 		4C547F352B56DF5F00090A92 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C547F342B56DF5F00090A92 /* Checkbox.swift */; };
 /* End PBXBuildFile section */
@@ -76,8 +76,8 @@
 		4C547F242B56B50E00090A92 /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		4C547F2A2B56B8AE00090A92 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		4C547F2C2B56C75F00090A92 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
-		4C547F2E2B56CBB900090A92 /* ACPhoneNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPhoneNumberTextField.swift; sourceTree = "<group>"; };
-		4C547F302B56D2A200090A92 /* ACDropdownTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACDropdownTextField.swift; sourceTree = "<group>"; };
+		4C547F2E2B56CBB900090A92 /* CustomPhoneNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhoneNumberTextField.swift; sourceTree = "<group>"; };
+		4C547F302B56D2A200090A92 /* CustomDropdownTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDropdownTextField.swift; sourceTree = "<group>"; };
 		4C547F322B56D8D200090A92 /* BaseScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
 		4C547F342B56DF5F00090A92 /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,12 +136,12 @@
 			isa = PBXGroup;
 			children = (
 				4C547EEA2B56890E00090A92 /* signup */,
-				4C547EE92B56890300090A92 /* login */,
+				4C547EE92B56890300090A92 /* signin */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		4C547EE92B56890300090A92 /* login */ = {
+		4C547EE92B56890300090A92 /* signin */ = {
 			isa = PBXGroup;
 			children = (
 				4C547EEE2B56894000090A92 /* view models */,
@@ -149,7 +149,7 @@
 				4C547EEC2B56892300090A92 /* views */,
 				4C547EEB2B56891900090A92 /* models */,
 			);
-			path = login;
+			path = signin;
 			sourceTree = "<group>";
 		};
 		4C547EEA2B56890E00090A92 /* signup */ = {
@@ -218,8 +218,8 @@
 			children = (
 				4C547F342B56DF5F00090A92 /* Checkbox.swift */,
 				4C547F322B56D8D200090A92 /* BaseScrollView.swift */,
-				4C547F302B56D2A200090A92 /* ACDropdownTextField.swift */,
-				4C547F2E2B56CBB900090A92 /* ACPhoneNumberTextField.swift */,
+				4C547F302B56D2A200090A92 /* CustomDropdownTextField.swift */,
+				4C547F2E2B56CBB900090A92 /* CustomPhoneNumberTextField.swift */,
 				4C547F172B56ACBE00090A92 /* PickerManager.swift */,
 				4C547F152B56A8F000090A92 /* BaseView.swift */,
 				4C547F132B56A8BB00090A92 /* CustomTextField.swift */,
@@ -380,7 +380,7 @@
 				4C547F0C2B56A05C00090A92 /* CustomButton.swift in Sources */,
 				4C547F202B56AD1200090A92 /* InputValidatorImpl.swift in Sources */,
 				4C547F1E2B56AD1200090A92 /* ValidationType.swift in Sources */,
-				4C547F2F2B56CBBA00090A92 /* ACPhoneNumberTextField.swift in Sources */,
+				4C547F2F2B56CBBA00090A92 /* CustomPhoneNumberTextField.swift in Sources */,
 				4C547F352B56DF5F00090A92 /* Checkbox.swift in Sources */,
 				4C547F182B56ACBE00090A92 /* PickerManager.swift in Sources */,
 				4C547EF82B56951E00090A92 /* UIView+AutoLayout+Utils.swift in Sources */,
@@ -395,7 +395,7 @@
 				4C547F162B56A8F000090A92 /* BaseView.swift in Sources */,
 				4C547EF62B5692B700090A92 /* Code+Utils.swift in Sources */,
 				4C547ED62B5684E500090A92 /* SceneDelegate.swift in Sources */,
-				4C547F312B56D2A200090A92 /* ACDropdownTextField.swift in Sources */,
+				4C547F312B56D2A200090A92 /* CustomDropdownTextField.swift in Sources */,
 				4C547F232B56AE9500090A92 /* Numeric+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

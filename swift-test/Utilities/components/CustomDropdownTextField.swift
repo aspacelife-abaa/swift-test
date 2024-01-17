@@ -7,7 +7,7 @@ import Foundation
 import UIKit
 //import DropDown
 
-public class ACDropdownTextField: BaseView {
+public class CustomDropdownTextField: BaseView {
     
     private let hintText: String = Constants.CHOOSE
     

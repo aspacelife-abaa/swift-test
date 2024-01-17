@@ -17,7 +17,6 @@ final class SigninViewController: UIViewController {
         }
         
         signinView.signinTapHandler = { [weak self] email, password in
-//            self?.viewModel.signin(email: email, password: password)
         }
         
         signinView.signupTapHandler = showSignUpViewController
@@ -32,7 +31,6 @@ final class SigninViewController: UIViewController {
     }
     
     private func addConstraints() {
-//        loginView.delegate = self
         signinView.anchor(top: safeAreaTopAnchor, leading: safeAreaLeadingAnchor, bottom: safeAreaBottomAnchor, trailing: safeAreaTrailingAnchor)
     }
     
